@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>MyFolio - Portfolio HTML Template</title>
+    <link rel="icon" type="img/x-icon" href="/img/s-icon.png" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="Portfolio HTML Template" name="keywords" />
+    <meta content="Portfolio HTML Template" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/s-icon.png" rel="icon" />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400|Solway:400,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Libraries -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header Start -->
+    <div class="top-header" id="top-header">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <img src="img/userImage1.jpg" alt="Surajit Roy" />
+          </div>
+
+          <div class="col-md-12">
+            <h1>I'm Surajit Roy</h1>
+          </div>
+
+          <div class="col-md-12">
+            <p>
+              Software Engineer, Web Developer, Front End Developer, Apps
+              Developer
+            </p>
+            <h2></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Nav Start -->
+    <div class="header">
+      <div class="container">
+        <div class="logo pull-left">
+          <h1><a href="index.html">Surajit</a></h1>
+        </div>
+
+        <nav id="nav-menu-container">
+          <ul class="nav-menu">
+            <li><a href="#top-header">Home</a></li>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <!-- <li class="menu-has-children">
+              <a href="#">Drop Down</a>
+              <ul>
+                <li><a href="#">Drop Down 1</a></li>
+                <li><a href="#">Drop Down 2</a></li>
+                <li class="menu-has-children">
+                  <a href="#">Drop Down 3</a>
+                  <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li><a href="#">Drop Down 2</a></li>
+                    <li><a href="#">Drop Down 3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li> -->
+            <li><a href="#contact">Contact me</a></li>
+          </ul>
+        </nav>
+
+        <nav class="nav social-nav pull-right d-none d-lg-inline">
+          <a href="https://github.com/Surajit-Roy" target="_blank"
+            ><i class="fa fa-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/surajit-roy-software-engineer-224a1622a"
+            target="_blank"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <i class="fa-brands fa-blogger"></i>
+          <a href="https://surajit44.blogspot.com/" target="_blank"
+            ><span
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="1em"
+                viewBox="0 0 448 512"
+              >
+                <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <style>
+                  svg {
+                    fill: #f2a602;
+                  }
+                </style>
+                <path
+                  d="M162.4 196c4.8-4.9 6.2-5.1 36.4-5.1 27.2 0 28.1.1 32.1 2.1 5.8 2.9 8.3 7 8.3 13.6 0 5.9-2.4 10-7.6 13.4-2.8 1.8-4.5 1.9-31.1 2.1-16.4.1-29.5-.2-31.5-.8-10.3-2.9-14.1-17.7-6.6-25.3zm61.4 94.5c-53.9 0-55.8.2-60.2 4.1-3.5 3.1-5.7 9.4-5.1 13.9.7 4.7 4.8 10.1 9.2 12 2.2 1 14.1 1.7 56.3 1.2l47.9-.6 9.2-1.5c9-5.1 10.5-17.4 3.1-24.4-5.3-4.7-5-4.7-60.4-4.7zm223.4 130.1c-3.5 28.4-23 50.4-51.1 57.5-7.2 1.8-9.7 1.9-172.9 1.8-157.8 0-165.9-.1-172-1.8-8.4-2.2-15.6-5.5-22.3-10-5.6-3.8-13.9-11.8-17-16.4-3.8-5.6-8.2-15.3-10-22C.1 423 0 420.3 0 256.3 0 93.2 0 89.7 1.8 82.6 8.1 57.9 27.7 39 53 33.4c7.3-1.6 332.1-1.9 340-.3 21.2 4.3 37.9 17.1 47.6 36.4 7.7 15.3 7-1.5 7.3 180.6.2 115.8 0 164.5-.7 170.5zm-85.4-185.2c-1.1-5-4.2-9.6-7.7-11.5-1.1-.6-8-1.3-15.5-1.7-12.4-.6-13.8-.8-17.8-3.1-6.2-3.6-7.9-7.6-8-18.3 0-20.4-8.5-39.4-25.3-56.5-12-12.2-25.3-20.5-40.6-25.1-3.6-1.1-11.8-1.5-39.2-1.8-42.9-.5-52.5.4-67.1 6.2-27 10.7-46.3 33.4-53.4 62.4-1.3 5.4-1.6 14.2-1.9 64.3-.4 62.8 0 72.1 4 84.5 9.7 30.7 37.1 53.4 64.6 58.4 9.2 1.7 122.2 2.1 133.7.5 20.1-2.7 35.9-10.8 50.7-25.9 10.7-10.9 17.4-22.8 21.8-38.5 3.2-10.9 2.9-88.4 1.7-93.9z"
+                /></svg></span
+          ></a>
+          <a
+            href="https://stackoverflow.com/users/21918714/surajit-roy"
+            target="_blank"
+            ><i class="fa fa-stack-overflow"></i
+          ></a>
+          <a
+            href="https://instagram.com/surajit_roy90?igshid=NGExMmI2YTkyZg=="
+            target="_blank"
+            ><i class="fa fa-instagram"></i
+          ></a>
+        </nav>
+      </div>
+    </div>
+    <!-- Nav End -->
+
+    <!-- About Me Start-->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-6 col-lg-4">
+            <img class="img-fluid" src="img/userImage2.jpg" />
+          </div>
+
+          <div class="col-md-6 col-lg-8">
+            <header class="section-header">
+              <h2>About Me</h2>
+            </header>
+            <h3><strong>Name:</strong> Surajit Roy</h3>
+            <h4>
+              <strong>Profession:</strong> Web Developer & Software Engineer,
+              Intern
+            </h4>
+            <p align="justify">
+              Hello everyone! My name is Surajit Roy, and I am delighted to
+              introduce myself as a Software Engineer. With a deep passion for
+              technology and a commitment to excellence, I have dedicated myself
+              to the world of programming.
+            </p>
+            <p align="justify">
+              My interests lie in a diverse range of languages, including C,
+              C++, Java, MySQL, DBMS, and SQL. This curiosity and enthusiasm
+              drive me to constantly expand my knowledge and skills, allowing me
+              to develop innovative and robust software solutions. It is my
+              pleasure to be part of this exciting field and contribute to the
+              ever-evolving landscape of software development.
+            </p>
+            <p align="justify">
+              My extensive skill set encompasses a wide range of cutting-edge
+              technologies, enabling me to develop captivating and
+              high-performing web and mobile applications. With expertise in
+              HTML, CSS, Bootstrap, Tailwind, JavaScript, Angular, React,
+              Node.js, and Flutter, I am a well-rounded developer adept at
+              delivering outstanding outcomes.
+            </p>
+            <a href="Resume/Surajit Roy - Resume.pdf" download="Surajit-Roy-CV"
+              >Download CV</a
+            >
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="skills">
+              <h3>Front End Skills</h3>
+              <div class="skill-name">
+                <p>HTML</p>
+                <p>90%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="90"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="skill-name">
+                <p>CSS</p>
+                <p>85%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="skill-name">
+                <p>Java Script</p>
+                <p>80%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>Flutter</p>
+                <p>80%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>Angular</p>
+                <p>70%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="70"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>Tailwind</p>
+                <p>75%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skills">
+              <h3>Back End Skills</h3>
+              <div class="skill-name">
+                <p>C Programming</p>
+                <p>80%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="80"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>C++</p>
+                <p>75%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="skill-name">
+                <p>Java</p>
+                <p>55%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="55"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+
+              <div class="skill-name">
+                <p>MySQL</p>
+                <p>85%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="85"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>SQL</p>
+                <p>75%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="75"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+              <div class="skill-name">
+                <p>Node js</p>
+                <p>50%</p>
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar"
+                  role="progressbar"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About Me End-->
+
+    <!-- Education Details Start -->
+    <div class="experience" id="education">
+      <div class="container">
+        <header class="section-header">
+          <h3>Education Details</h3>
+          <p align="justify">
+            Hello everyone! I am delighted to present my comprehensive
+            educational details, showcasing my academic journey and dedication
+            to continuous learning. Thank you for allowing me to share this
+            important aspect of my professional profile with you.
+          </p>
+        </header>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="exp-column">
+              <p class="exp-date">01-Sep-2021 <span>to</span> 30-May-2023</p>
+              <h4 class="exp-company">
+                Kalinga Institute of Industrial Technology, Bhubaneswar
+              </h4>
+              <h4 class="exp-designation">Master of Computer Application</h4>
+              <p class="exp-detail cgpa" align="right">8.26 CGPA</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="exp-column">
+              <p class="exp-date">10-July-2018 <span>to</span> 20-Jun-2021</p>
+              <h4 class="exp-company">
+                Bengal Institute of Science & Technology, Purulia, 723102
+              </h4>
+              <h4 class="exp-designation">Bachelor of Computer Application</h4>
+              <p class="exp-detail cgpa" align="right">8.83 CGPA</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="exp-column">
+              <p class="exp-date">08-June-2018</p>
+              <h4 class="exp-company">
+                Garhjoypur Raja B B High (H. S.) School, 723201
+              </h4>
+              <h4 class="exp-designation">
+                WBCHSE, Higher Secondary Exam, Science
+              </h4>
+              <p class="exp-detail cgpa" align="right">61% Percentage</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="exp-column">
+              <p class="exp-date">10-May-2016</p>
+              <h4 class="exp-company">
+                Garhjoypur Raja B B High (H. S.) School, 723201
+              </h4>
+              <h4 class="exp-designation">WBBSE, Matriculation Examination</h4>
+              <p class="exp-detail cgpa" align="right">69.57% Percentage</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Education Details End -->
+
+    <!-- Job Experience Start -->
+    <div class="experience" id="experience">
+      <div class="container">
+        <header class="section-header">
+          <h3>Job Experience</h3>
+          <p align="justify">
+            Currently, I am undertaking an enriching internship at Financial
+            Software & Systems (P) Ltd., where I am immersed in valuable
+            hands-on experience. As an intern, I am actively involved in
+            contributing to the company's objectives and expanding my skills in
+            a professional setting.
+          </p>
+        </header>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="exp-column job-box">
+              <p class="exp-date">13-02-2023 <span>to</span> 31-07-2023</p>
+              <a href="https://www.fsstech.com/" target="_blank"
+                ><h4 class="exp-company">
+                  Financial Software & Systems (P) Ltd
+                </h4></a
+              >
+              <h4 class="exp-designation">
+                Software Engineer , Intern
+              </h4>
+              <p class="exp-detail" align="justify">
+                Right now, I'm dedicated to web development, working hard to improve my skills during my internship period, aiming to excel in this area.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="exp-column job-box">
+              <p class="exp-date">01-08-2023 <span>to</span> Present</p>
+              <a href="https://www.fsstech.com/" target="_blank"
+                ><h4 class="exp-company">
+                  Financial Software & Systems (P) Ltd
+                </h4></a
+              >
+              <h4 class="exp-designation">
+                Software Engineer
+              </h4>
+              <p class="exp-detail" align="justify">
+                I am currently dedicated to a Flutter app development project
+                while simultaneously involved in web development, expanding my
+                expertise in both areas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Job Experience End -->
+
+    <!-- Services Start -->
+    <div class="services" id="services">
+      <div class="container">
+        <header class="section-header">
+          <h3>My Services</h3>
+          <p align="justify">
+            Greetings, everyone! I am a skilled software engineer with a
+            background in web development. Currently, I am channeling my
+            expertise into the exciting realm of Flutter app development. It's a
+            thrilling transition that allows me to explore new horizons and
+            deliver exceptional mobile experiences.
+          </p>
+        </header>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="single-service">
+              <span></span>
+              <div class="service-icon"><i class="fa fa-television"></i></div>
+              <h4><a href="#">Software Development</a></h4>
+              <p align="justify">
+                I have successfully developed various software projects
+                utilizing the power of JavaScript, Angular, and other
+                cutting-edge technologies. These endeavors have honed my skills
+                and enabled me to deliver exceptional solutions with a seamless
+                user experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="single-service">
+              <span></span>
+              <div class="service-icon"><i class="fa fa-laptop"></i></div>
+              <h4><a href="#">Web Development</a></h4>
+              <p align="justify">
+                I have leveraged the combination of HTML, CSS, JavaScript, and
+                Angular to skillfully design and develop captivating web pages
+                and websites. Through my expertise, I have crafted visually
+                appealing online experiences that seamlessly blend aesthetics
+                and functionality.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="single-service">
+              <span></span>
+              <div class="service-icon"><i class="fa fa-android"></i></div>
+              <h4><a href="#">Apps Development</a></h4>
+              <p align="justify">
+                Presently, my focus is dedicated to an engaging app development
+                venture, where I harness the capabilities of Flutter. This
+                cutting-edge framework enables me to craft innovative and
+                immersive mobile applications, pushing the boundaries of user
+                experience and functionality.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services End -->
+
+    <!-- Counter Start -->
+    <div class="counters">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
+              <div class="counter-icon-box"><i class="fa fa-calendar"></i></div>
+              <div class="number animateNumber" data-toggle="counter-up">
+                <span>05</span>
+              </div>
+              <h4 class="font-weight">Months of Experience</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
+              <div class="counter-icon-box"><i class="fa fa-check"></i></div>
+              <div class="number animateNumber" data-toggle="counter-up">
+                <span>05</span>
+              </div>
+              <h4 class="font-weight">Completed Projects</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
+              <div class="counter-icon-box"><i class="fa fa-users"></i></div>
+              <div class="number animateNumber" data-toggle="counter-up">
+                <span>10</span>
+              </div>
+              <h4 class="font-weight">Total Clients</h4>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="counter">
+              <div class="counter-icon-box"><i class="fa fa-heart"></i></div>
+              <div class="number animateNumber" data-toggle="counter-up">
+                <span>50</span>
+              </div>
+              <h4 class="font-weight">People Likes</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Counter End -->
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+      <h2 class="page-header">Recent Projects</h2>
+      <div class="project-container">
+        <div class="project-card" id="project1">
+          <div class="project-number project-number-left">01</div>
+          <div class="project-content project-content-left">
+            <div class="project-skill-container">
+              <img class="project-skill" src="./img/stack/HTML.png" alt="" />
+              <img class="project-skill" src="./img/stack/CSS.png" alt="" />
+              <img
+                class="project-skill"
+                src="./img/stack/Javascript.svg"
+                alt=""
+              />
+              <img class="project-skill" src="./img/stack/angular.svg" alt="" />
+              <img class="project-skill" src="./img/stack/NodeJs.svg" alt="" />
+              <img
+                class="project-skill"
+                src="./img/stack/Bootstrap.svg"
+                alt=""
+              />
+            </div>
+            <h2 class="project-heading">My Restaurant</h2>
+            <p class="project-sub-heading">
+              It is a Restaurant App. In this project I am creating a Restaurant
+              using Angular framework. In this restaurant you can buy you
+              favriout food.
+            </p>
+            <div class="btn-group">
+              <a
+                href="https://github.com/Surajit-Roy/myrestaurant"
+                target="_blank"
+              >
+                <i title="GitHubLink" class="fa fa-github icon"></i>
+              </a>
+              <a href="">
+                <i title="Live Link" class="fa fa-link icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project End -->
+
+    <!-- Portfolio Start -->
+    <!-- <div class="portfolio" id="portfolio">
+      <div class="container">
+        <header class="section-header">
+          <h3 class="section-title">My Portfolio</h3>
+          <p>
+            Morbi lacinia malesuada risus vel pellentesque. Cras malesuada,
+            felis nec dignissim lobortis, nisl nulla venenatis arcu, et commodo
+            lacus nulla sit amet libero.
+          </p>
+        </header>
+
+        <div class="row">
+          <div class="col-lg-12">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".web-des">Software Development</li>
+              <li data-filter=".web-dev">Web Development</li>
+              <li data-filter=".app-dev">App Development</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container">
+          <div class="col-lg-4 col-md-6 portfolio-item web-des">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio-1.jpg" class="img-fluid" alt="" />
+                <a
+                  href="img/portfolio-1.jpg"
+                  data-lightbox="portfolio"
+                  data-title="Curabitur semper erat"
+                  class="link-preview"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a href="#" class="link-details" title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  Curabitur semper erat <span>Web Design</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item web-des">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio-2.jpg" class="img-fluid" alt="" />
+                <a
+                  href="img/portfolio-2.jpg"
+                  class="link-preview"
+                  data-lightbox="portfolio"
+                  data-title="Maecenas a tempus tortor"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a href="#" class="link-details" title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  Maecenas a tempus tortor <span>Web Design</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/projects/angular2.png" class="img-fluid" alt="" />
+                <a
+                  href="img/projects/angular1.png"
+                  class="link-preview"
+                  data-lightbox="portfolio"
+                  data-title="Aliquam id sapien lorem"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a
+                  href="https://github.com/Surajit-Roy/myrestaurant"
+                  target="_blank"
+                  class="link-details"
+                  title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  My Restaurant<span>Web Development</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item web-dev">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio-4.jpg" class="img-fluid" alt="" />
+                <a
+                  href="img/portfolio-4.jpg"
+                  class="link-preview"
+                  data-lightbox="portfolio"
+                  data-title="Quisque lectus mauris"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a href="#" class="link-details" title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  Quisque lectus mauris <span>Web Development</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio-5.jpg" class="img-fluid" alt="" />
+                <a
+                  href="img/portfolio-5.jpg"
+                  class="link-preview"
+                  data-lightbox="portfolio"
+                  data-title="Interdum et malesuada"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a href="#" class="link-details" title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  Interdum et malesuada <span>Apps Development</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item app-dev">
+            <div class="portfolio-wrap">
+              <figure>
+                <img src="img/portfolio-6.jpg" class="img-fluid" alt="" />
+                <a
+                  href="img/portfolio-6.jpg"
+                  class="link-preview"
+                  data-lightbox="portfolio"
+                  data-title="Pellentesque lacus"
+                  title="Preview"
+                  ><i class="fa fa-eye"></i
+                ></a>
+                <a href="#" class="link-details" title="More Details"
+                  ><i class="fa fa-link"></i
+                ></a>
+                <h4 class="portfolio-title">
+                  Pellentesque lacus <span>Apps Development</span>
+                </h4>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Portfolio End -->
+
+    <!-- Testimonials Start -->
+    <!-- <div class="testimonials" id="testimonials">
+      <div class="container">
+        <i class="fa fa-4x fa-quote-left"></i>
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <img src="img/testimonial-1.jpg" class="testimonial-img" alt="" />
+            <h3>Abigail Shaw</h3>
+            <h4>Greenhouse worker</h4>
+            <p>
+              Duis elementum consequat feugiat. In hac habitasse platea
+              dictumst. Pellentesque habitant morbi tristique senectus malesuada
+              fames turpis egestas.
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-2.jpg" class="testimonial-img" alt="" />
+            <h3>Jake Gregory</h3>
+            <h4>News correspondent</h4>
+            <p>
+              Curabitur bibendum euismod augue, eu rutrum metus consectetur id.
+              Duis lacus erat, gravida laoreet molestie eget, congue in erat.
+            </p>
+          </div>
+
+          <div class="testimonial-item">
+            <img src="img/testimonial-3.jpg" class="testimonial-img" alt="" />
+            <h3>Maddison Hughes</h3>
+            <h4>Social worker</h4>
+            <p>
+              Nulla at luctus ligula. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Duis enim quam, interdum nec turpis at, volutpat
+              ultricies ligula.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- Testimonials End -->
+
+    <!-- Contact Start -->
+    <div class="contact" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <h3>Contact Me</h3>
+          <p align="justify">
+            Provided below are my contact details and a user-friendly contact
+            form. Whether you have inquiries, seek professional connection, or
+            wish to explore hiring opportunities, I encourage you to reach out
+            to me. I eagerly await the opportunity to connect and discuss
+            further with you.
+          </p>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <div class="contact-info">
+              <p><i class="fa fa-user"></i>Surajit Roy</p>
+              <p><i class="fa fa-tag"></i>Web Developer & Software Engineer</p>
+              <p>
+                <i class="fa fa-map-marker"></i>Purulia, West Bengal, 723201,
+                India
+              </p>
+              <p>
+                <i class="fa fa-envelope"></i
+                ><a href="mailto:surajitroy9064@gmail.com"
+                  >surajitroy9064@gmail.com</a
+                >
+              </p>
+              <p>
+                <i class="fa fa-phone"></i
+                ><a href="tel:+919064516911">+91 9064516911</a>
+              </p>
+              <div class="social">
+                <a href="https://github.com/Surajit-Roy" target="_blank"
+                  ><i class="fa fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/surajit-roy-software-engineer-224a1622a"
+                  target="_blank"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+                <a href="https://surajit44.blogspot.com/" target="_blank"
+                  ><span
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="1em"
+                      viewBox="0 0 448 512"
+                    >
+                      <!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                      <style>
+                        svg {
+                          fill: #f2a602;
+                        }
+                      </style>
+                      <path
+                        d="M162.4 196c4.8-4.9 6.2-5.1 36.4-5.1 27.2 0 28.1.1 32.1 2.1 5.8 2.9 8.3 7 8.3 13.6 0 5.9-2.4 10-7.6 13.4-2.8 1.8-4.5 1.9-31.1 2.1-16.4.1-29.5-.2-31.5-.8-10.3-2.9-14.1-17.7-6.6-25.3zm61.4 94.5c-53.9 0-55.8.2-60.2 4.1-3.5 3.1-5.7 9.4-5.1 13.9.7 4.7 4.8 10.1 9.2 12 2.2 1 14.1 1.7 56.3 1.2l47.9-.6 9.2-1.5c9-5.1 10.5-17.4 3.1-24.4-5.3-4.7-5-4.7-60.4-4.7zm223.4 130.1c-3.5 28.4-23 50.4-51.1 57.5-7.2 1.8-9.7 1.9-172.9 1.8-157.8 0-165.9-.1-172-1.8-8.4-2.2-15.6-5.5-22.3-10-5.6-3.8-13.9-11.8-17-16.4-3.8-5.6-8.2-15.3-10-22C.1 423 0 420.3 0 256.3 0 93.2 0 89.7 1.8 82.6 8.1 57.9 27.7 39 53 33.4c7.3-1.6 332.1-1.9 340-.3 21.2 4.3 37.9 17.1 47.6 36.4 7.7 15.3 7-1.5 7.3 180.6.2 115.8 0 164.5-.7 170.5zm-85.4-185.2c-1.1-5-4.2-9.6-7.7-11.5-1.1-.6-8-1.3-15.5-1.7-12.4-.6-13.8-.8-17.8-3.1-6.2-3.6-7.9-7.6-8-18.3 0-20.4-8.5-39.4-25.3-56.5-12-12.2-25.3-20.5-40.6-25.1-3.6-1.1-11.8-1.5-39.2-1.8-42.9-.5-52.5.4-67.1 6.2-27 10.7-46.3 33.4-53.4 62.4-1.3 5.4-1.6 14.2-1.9 64.3-.4 62.8 0 72.1 4 84.5 9.7 30.7 37.1 53.4 64.6 58.4 9.2 1.7 122.2 2.1 133.7.5 20.1-2.7 35.9-10.8 50.7-25.9 10.7-10.9 17.4-22.8 21.8-38.5 3.2-10.9 2.9-88.4 1.7-93.9z"
+                      /></svg></span
+                ></a>
+                <a
+                  href="https://stackoverflow.com/users/21918714/surajit-roy"
+                  target="_blank"
+                  ><i class="fa fa-stack-overflow"></i
+                ></a>
+                <a
+                  href="https://instagram.com/surajit_roy90?igshid=NGExMmI2YTkyZg=="
+                  target="_blank"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form">
+              <form
+                class="form"
+                action="https://formspree.io/f/mqkoeolp"
+                method="post"
+              >
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Your Name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group col-md-6">
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="Your Email"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Subject"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    class="form-control"
+                    rows="5"
+                    placeholder="Message"
+                    required
+                  ></textarea>
+                </div>
+                <div><button type="submit">Send Message</button></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact End -->
+
+    <!-- Footer Start -->
+    <div class="footer">
+      <div class="container">
+        <div class="copyright">
+          <p>
+            &copy; Copyright 2023 <a href="#">Surajit Roy</a>. All Rights
+            Reserved
+          </p>
+          <p>Powered by <a href="#">Surajit Roy</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- Footer end -->
+
+    <!-- Back to Top -->
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/stickyjs/sticky.js"></script>
+    <script src="lib/superfish/hoverIntent.js"></script>
+    <script src="lib/superfish/superfish.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
