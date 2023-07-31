@@ -261,7 +261,7 @@ h6 {
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #nav-menu-container {
         display: none;
     }
@@ -342,7 +342,7 @@ h6 {
     color: var(--white);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     #mobile-nav-toggle {
         display: inline;
     }
@@ -597,6 +597,11 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .job-box{
     height: 250px;
+}
+@media (max-width: 1000px) {
+    .job-box {
+        height: 310px;
+    }
 }
 
 .experience .exp-column {
