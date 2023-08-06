@@ -1000,6 +1000,10 @@ body.mobile-nav-active #mobile-nav-toggle {
 #project1 {
     background-image: url(../img/projects/Project1.png);
 }
+#project2 {
+    background-image: url(../img/projects/eMart_wallpaper.jpg);
+    margin-left: 120px;
+}
 /* 
 #project2 {
     background-image: url(../img/projects/Project2.png);
