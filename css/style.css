@@ -925,7 +925,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .project-sub-heading {
-    font-size: 16px;
+    font-size: 19px;
     width: 70%;
     font-style: italic;
 }
@@ -1004,11 +1004,12 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-image: url(../img/projects/eMart_wallpaper.jpg);
     margin-left: 120px;
 }
-/* 
+
 #project3 {
-    background-image: url(../img/projects/Project3.png);
+    background-image: url(../img/projects/emart_seller_project.png);
 }
 
+/*
 #project4 {
     background-image: url(../img/projects/Project4.png);
     margin-left: 120px;
