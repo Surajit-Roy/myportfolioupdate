@@ -918,7 +918,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .project-heading {
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     line-height: 3rem;
     color: var(--blue-white);
@@ -984,7 +984,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .project-skill-container {
-    max-width: 60%;
+    max-width: 100%;
     width: fit-content;
     display: flex;
     gap: 10px;
@@ -1067,11 +1067,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     #project4 {
         margin-left: 0;
     }
-
-    .project-skill-container {
-        width: 100%;
-    }
-
+    
     .project-skill {
         width: 35px;
     }
