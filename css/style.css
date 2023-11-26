@@ -1009,11 +1009,11 @@ body.mobile-nav-active #mobile-nav-toggle {
     background-image: url(../img/projects/emart_seller_project.png);
 }
 
-/*
+
 #project4 {
-    background-image: url(../img/projects/Project4.png);
+    background-image: url(../img/projects/ExpenseManager.png);
     margin-left: 120px;
-} */
+}
 
 @media (max-width:1200px) {
     .page-header {
