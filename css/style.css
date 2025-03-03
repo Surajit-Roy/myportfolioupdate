@@ -21,10 +21,10 @@
 }
 
 body {
-    color: var(--darkGray);
+    color: var(--white);
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    background: var(--white);
+    background: var(--black-3);
     overflow-x: hidden;
 }
 
@@ -80,7 +80,34 @@ h6 {
     color: var(--white);
 }
 
-
+.scroll-down {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 44px;
+    height: 44px;
+    background: var(--bgOrange);
+    color: var(--white);
+    text-align: center;
+    line-height: 44px;
+    font-size: 16px;
+    border-radius: 50%;
+    transition: background 0.5s, opacity 0.5s;
+    z-index: 11;
+    display: block;
+    animation: bounce 1.5s infinite;
+}
+.scroll-down i {
+    color: var(--white);
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
 
 /* ============================= */
 /* ------ Top Header CSS ------- */
@@ -92,6 +119,8 @@ h6 {
     width: 100%;
     height: 100vh;
     color: var(--white);
+    text-align: center;
+    padding: 50px 0;
 }
 
 .top-header:after {
@@ -101,9 +130,9 @@ h6 {
     height: 100%;
     left: 0;
     top: 0;
-    background: url(../img/userImage2.jpg) left top repeat;
+    background: url(../img/pic2.png) left top repeat;
     background-size: cover;
-    filter: blur(41px);
+    filter: blur(8px);
     -webkit-filter: blur(8px);
     z-index: -1;
 }
@@ -607,7 +636,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .experience .exp-column {
     margin-top: 30px;
     padding: 25px 30px;
-    background: var(--blue-white);
+    background: var(--lightGray);
 }
 
 .experience .exp-column::before {
@@ -663,7 +692,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .experience .exp-designation {
     margin-bottom: 10px;
-    color: var(--lightGray);
+    color: var(--blue-white);
     font-size: 16px;
     font-weight: 400;
     font-style: italic;
@@ -690,7 +719,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services {
     padding: 60px 0;
     text-align: center;
-    background: var(--white);
 }
 
 .services .section-header {
@@ -707,7 +735,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 300;
     margin:30px 0 0;
     padding: 25px 15px 30px 15px;
-    background: var(--blue-white);
+    background: var(--lightGray);
 }
 
 .services .single-service::before {
@@ -829,7 +857,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Project Section Start */
 .projects {
     margin-top: 4rem;
-    background-color: rgb(231, 231, 231);
 }
 
 .project-container {
@@ -1399,7 +1426,7 @@ body.mobile-nav-active #mobile-nav-toggle {
     color: var(--darkGray);
     font-size: 16px;
     font-weight: 300;
-    padding: 10px 0;
+    padding: 10px 10px;
     border: none;
     border-bottom: 1px solid var(--bgOrange);
     border-radius: 0;

@@ -91,6 +91,16 @@
         return false;
     });
 
+    $(document).ready(function() {
+        $(window).scroll(function () {
+            if ($(this).scrollTop() < 50) {
+                $('.scroll-down').fadeIn('medium');
+            } else {
+                $('.scroll-down').fadeOut('medium');
+            }
+        });
+    });
+
 
     // Skills section
     $('.skills').waypoint(function () {
