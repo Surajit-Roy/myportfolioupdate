@@ -601,11 +601,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about .progress {
     margin-bottom: 15px;
     border-radius: 0;
+    background: rgba(255, 255, 255, 0.2); /* Light background for visibility */
+    height: 12px;
+    overflow: hidden;
 }
 
 .about .progress .progress-bar {
     background: var(--bgOrange);
     border-radius: 0;
+    width: 0%; /* Initially hidden */
+    height: 100%;
+    transition: width 1.5s ease-in-out;
 }
 
 
@@ -636,10 +642,16 @@ body.mobile-nav-active #mobile-nav-toggle {
 .experience .exp-column {
     margin-top: 30px;
     padding: 25px 30px;
-    background: var(--lightGray);
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(12px) saturate(120%); /* Stronger glass effect */
+    -webkit-backdrop-filter: blur(12px) saturate(120%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    transition: 0.3s ease-in-out;
 }
 
-.experience .exp-column::before {
+/* .experience .exp-column::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -667,6 +679,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .experience .exp-column:hover::after {
     transition: .3s;
     left: 15px;
+} */
+
+.experience .exp-column::before,
+.experience .exp-column::after {
+    display: none; /* Removing the previous border effects */
+}
+
+.experience .exp-column:hover {
+    transition: 0.3s;
+    transform: scale(1.05); /* Interactive zoom */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Glow effect on hover */
 }
 
 .experience .exp-date {
@@ -699,7 +722,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .exp-designation{
-    line-height: 4rem;
+    line-height: 3rem;
 }
 
 .experience .exp-detail {
@@ -707,7 +730,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .cgpa{
-    color: #003824;
+    color: #ffa500e6;
     font-weight: bolder;
 }
 
@@ -735,10 +758,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     font-weight: 300;
     margin:30px 0 0;
     padding: 25px 15px 30px 15px;
-    background: var(--lightGray);
+    background: rgba(255, 255, 255, 0.1); /* Glass effect */
+    border-radius: 15px; /* Rounded corners */
+    backdrop-filter: blur(12px) saturate(120%); /* Stronger glass effect */
+    -webkit-backdrop-filter: blur(12px) saturate(120%);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); /* Soft shadow for depth */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    transition: 0.3s ease-in-out;
 }
 
-.services .single-service::before {
+/* .services .single-service::before {
     position: absolute;
     content: "";
     height: 3px;
@@ -766,6 +795,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services .single-service:hover::after {
     transition: .3s;
     left: 0;
+} */
+
+.services .single-service::before,
+.services .single-service::after {
+    display: none; /* Removing the previous border effects */
+}
+
+.services .single-service:hover {
+    transition: 0.3s;
+    transform: scale(1.05); /* Interactive zoom */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2); /* Glow effect on hover */
 }
 
 .services .single-service .service-icon {
@@ -1372,6 +1412,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 575px) {
     .contact .contact-info p {
         font-size: 16px;
+    }
+    .contact .form {
+        padding-top: 0.7rem;
     }
 }
 

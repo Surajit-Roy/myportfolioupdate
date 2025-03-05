@@ -91,6 +91,7 @@
         return false;
     });
 
+    //Scroll-Down button
     $(document).ready(function() {
         $(window).scroll(function () {
             if ($(this).scrollTop() < 50) {
@@ -108,6 +109,26 @@
             $(this).css("width", $(this).attr("aria-valuenow") + '%');
         });
     }, {offset: '80%'});
+
+    //skills progress-bar animation
+    $(document).ready(function () {
+        function animateProgressBars() {
+            $(".progress-bar").each(function () {
+                let $bar = $(this);
+                let bounding = this.getBoundingClientRect();
+                let isVisible = bounding.top < window.innerHeight && bounding.bottom > 0;
+
+                if (isVisible && $bar.width() === 0) {
+                    let targetWidth = $bar.attr("aria-valuenow") + "%";
+                    $bar.css("width", targetWidth);
+                }
+            });
+        }
+
+        $(window).on("scroll", animateProgressBars);
+        animateProgressBars(); // Initial check on load
+    });
+    
 
 
     // jQuery counterUp
