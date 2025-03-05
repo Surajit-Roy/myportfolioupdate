@@ -534,6 +534,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 .about {
     padding: 60px 0 15px 0;
     position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.about.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .about .row {
@@ -624,6 +632,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     position: relative;
     padding: 0;
     padding-top: 3rem;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.experience.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .experience .section-header p {
@@ -742,6 +758,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 .services {
     padding: 60px 0;
     text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.services.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .services .section-header {
@@ -1400,6 +1424,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact {
     position: relative;
     padding: 60px 0;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+}
+
+.contact.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact .contact-info p {
@@ -1467,6 +1499,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .contact .form input,
 .contact .form textarea {
     color: var(--darkGray);
+    background-color: var(--blue-white);
     font-size: 16px;
     font-weight: 300;
     padding: 10px 10px;

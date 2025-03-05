@@ -112,6 +112,54 @@
 
     //skills progress-bar animation
     $(document).ready(function () {
+        function animateAboutSection() {
+            $(".about").each(function () {
+                let $section = $(this);
+                let bounding = this.getBoundingClientRect();
+                let isVisible = bounding.top < window.innerHeight * 0.85 && bounding.bottom > 0;
+
+                if (isVisible) {
+                    $section.addClass("visible");
+                }
+            });
+        }
+
+        function animateEducationSection() {
+            $(".experience").each(function () {
+                let $section = $(this);
+                let bounding = this.getBoundingClientRect();
+                let isVisible = bounding.top < window.innerHeight * 0.85 && bounding.bottom > 0;
+
+                if (isVisible) {
+                    $section.addClass("visible");
+                }
+            });
+        }
+
+        function animateServiceSection() {
+            $(".services").each(function () {
+                let $section = $(this);
+                let bounding = this.getBoundingClientRect();
+                let isVisible = bounding.top < window.innerHeight * 0.85 && bounding.bottom > 0;
+
+                if (isVisible) {
+                    $section.addClass("visible");
+                }
+            });
+        }
+
+        function animateContactSection() {
+            $(".contact").each(function () {
+                let $section = $(this);
+                let bounding = this.getBoundingClientRect();
+                let isVisible = bounding.top < window.innerHeight * 0.85 && bounding.bottom > 0;
+
+                if (isVisible) {
+                    $section.addClass("visible");
+                }
+            });
+        }
+
         function animateProgressBars() {
             $(".progress-bar").each(function () {
                 let $bar = $(this);
@@ -125,8 +173,20 @@
             });
         }
 
-        $(window).on("scroll", animateProgressBars);
-        animateProgressBars(); // Initial check on load
+        $(window).on("scroll", function () {
+            animateAboutSection();
+            animateProgressBars();
+            animateEducationSection();
+            animateServiceSection();
+            animateContactSection();
+        });
+
+        // Run once on page load in case section is already in view
+        animateAboutSection();
+        animateProgressBars();
+        animateEducationSection();
+        animateServiceSection();
+        animateContactSection();
     });
     
 
