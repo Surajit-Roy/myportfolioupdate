@@ -646,10 +646,10 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin:0;
 }
 
-.job-box{
+/* .job-box{
     height: 250px;
-}
-@media (max-width: 1000px) {
+} */
+@media (min-width: 1000px) {
     .job-box {
         height: 310px;
     }
@@ -1089,7 +1089,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #project1 {
-    background-image: url(../img/projects/Project1.png);
+    background-image: url(../img/projects/DynamicCardProject.gif);
 }
 #project2 {
     background-image: url(../img/projects/eMart_wallpaper.jpg);
@@ -1131,19 +1131,16 @@ body.mobile-nav-active #mobile-nav-toggle {
     }
 
     .project-content {
+        padding: 0rem;
+        gap: 0.5rem;
         scale: 0.5;
-        bottom: 0;
         left: 0;
         right: 0;
         top: 0;
     }
 
-    .project-content-left {
-        left: 0;
-    }
-
     .project-heading {
-        font-size: 40px;
+        font-size: 30px;
         width: 100%;
     }
 
